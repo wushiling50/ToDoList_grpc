@@ -20,7 +20,7 @@ func CurrentLimit() {
 			Resource:               ResName,
 			TokenCalculateStrategy: flow.Direct,
 			ControlBehavior:        flow.Throttling,
-			Threshold:              10,   //流控阈值(qps为10)
+			Threshold:              10,   //流控阈值(qps为10),请求间隔为100ms
 			StatIntervalInMs:       1000, //统计周期1s
 			MaxQueueingTimeMs:      500,  // 最长排队等待时间
 		},
