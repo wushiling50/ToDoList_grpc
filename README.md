@@ -17,7 +17,7 @@
 #项目结构
 ToDoList-grpc/  
 ├── api-gateway //网关部分  
-├ ─ ─├──cmd //启动函数  
+│   ├──cmd //启动函数  
 ├ ─ ─├──discovery //etcd服务发现  
 ├ ─ ─├──inner //业务逻辑  
 ├ ─ ─├──middleware //中间件  
