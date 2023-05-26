@@ -1,7 +1,7 @@
 # ToDoList_grpc
 基于gin+gorm+grpc+etcd+mysql的备忘录demo
 
-#在线api文档地址：https://apifox.com/apidoc/shared-bbd81ba6-7d76-4e96-afd5-0cf6939df8ed
+#在线api接口文档地址：https://apifox.com/apidoc/shared-bbd81ba6-7d76-4e96-afd5-0cf6939df8ed
 
 #项目主要依赖
 >* gin
@@ -35,8 +35,11 @@ ToDoList-grpc/
 │   ├──inner //业务逻辑  
 │   ├──login //etcd服务注册  
 
+#项目亮点(maybe)  
+> 1.etcd实现了服务发现于服务注册  
+> 2.使用sentinel实现限流与熔断(限流使用匀速排队的统计策略，熔断使用慢调用策略)
 
-
+#
 
 
 
