@@ -5,20 +5,13 @@
 
 #项目主要依赖
 > -gin
-> 
-> -gorm
-> 
+> -gorm 
 > -grpc
 > -etcd
-> 
 > -sentinel
-> 
 > -logrus
-> 
 > -viper
-> 
 > -jwt-go
-> 
 > -protobuf
 
 #项目结构
