@@ -5,6 +5,7 @@
 
 #项目主要依赖
 > -gin
+> 
 > -gorm 
 > -grpc
 > -etcd
