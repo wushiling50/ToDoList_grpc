@@ -18,22 +18,22 @@
 ToDoList-grpc/  
 ├── api-gateway //网关部分  
 │   ├──cmd //启动函数  
-├ ─ ─├──discovery //etcd服务发现  
-├ ─ ─├──inner //业务逻辑  
-├ ─ ─├──middleware //中间件  
-├ ─ ─├──routes //路由组  
+│   ├──discovery //etcd服务发现  
+│   ├──inner //业务逻辑  
+│   ├──middleware //中间件  
+│   ├──routes //路由组  
 ├── conf //配置文件  
 ├── pkg //工具包  
 ├── service //存放pb文件及其生成的服务文件  
 ├── pkg //工具包  
 ├── task //任务部分  
-├ ─ ─├──cmd //启动函数  
-├ ─ ─├──inner //业务逻辑  
-├ ─ ─├──login //etcd服务注册  
+│   ├──cmd //启动函数  
+│   ├──inner //业务逻辑  
+│   ├──login //etcd服务注册  
 ├── user //用户部分  
-├ ─ ─├──cmd //启动函数  
-├ ─ ─├──inner //业务逻辑  
-├ ─ ─├──login //etcd服务注册  
+│   ├──cmd //启动函数  
+│   ├──inner //业务逻辑  
+│   ├──login //etcd服务注册  
 
 
 
