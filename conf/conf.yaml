@@ -1,0 +1,31 @@
+server: # 项目配置
+  port: :4000 # 项目端口
+  version: 1.0 
+  jwtSecret: wushiling
+
+mysql:
+  driverName: mysql
+  host: 127.0.0.1
+  port: 3306
+  dbName: todolist_grpc
+  username: root
+  password: haoning031203
+  charset: utf8mb4
+
+redis: # redis相关配置(不过没用上)
+  address: 127.0.0.1:6379
+  password:
+
+etcd: # etcd相关配置
+  address: 127.0.0.1:2379
+
+domain: # 各个微服务的配置(域)
+  gateway:
+    name: gateway
+  user:
+    name: user
+    grpcAddress: 127.0.0.1:10001 # user模块地址
+  task:
+    name: task
+    grpcAddress: 127.0.0.1:10002 # task模块地址
+

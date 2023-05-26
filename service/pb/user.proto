@@ -1,0 +1,28 @@
+syntax="proto3";
+package pb;
+option go_package="../service";
+
+message UserModel{
+// @inject_tag: json:"uid"
+uint32 Uid=1;
+// @inject_tag: json:"user_name"
+string UserName=2;
+}
+
+message UserRequest{
+// @inject_tag: json:"user_name" form:"user_name"
+string UserName=1;
+// @inject_tag: json:"password" form:"password"
+string Password=2;
+}
+
+message UserResponse{
+    UserModel UserDetail=1;
+    uint32 code=2;
+}
+
+service UserService{
+    rpc UserLogin(UserRequest) returns(UserResponse);
+    rpc UserRegister(UserRequest) returns(UserResponse);
+}
+
