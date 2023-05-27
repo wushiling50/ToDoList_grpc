@@ -22,20 +22,25 @@ func InitEtcd() {
 		Name:    viper.GetString("domain.user.name"),
 		Address: grpcAddress,
 	}
-	server := grpc.NewServer()
 
+	// 绑定服务(创建用户服务的服务端)
+	server := grpc.NewServer()
 	defer server.Stop()
-	// 绑定服务(注册用户服务的服务端)
 	service.RegisterUserServiceServer(server, handler.NewUserService())
+
 	//监听
 	lis, err := net.Listen("tcp", grpcAddress)
 	if err != nil {
 		panic(err)
 	}
+
+	// 注册 grpc 服务节点到 etcd 中
 	if _, err := etcdRegister.Register(userNode, 10); err != nil {
-		panic(fmt.Sprintf("开启服务失败, err: %v", err))
+		panic(fmt.Sprintf("服务端开启失败, err: %v", err))
 	}
-	logrus.Info("服务开始监听地址： ", grpcAddress)
+
+	logrus.Info("服务端开始监听地址: ", grpcAddress)
+	// 启动 grpc 服务
 	if err := server.Serve(lis); err != nil {
 		panic(err)
 	}
