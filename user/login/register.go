@@ -94,7 +94,6 @@ func (r *Register) register() error {
 }
 
 func (r *Register) KeepAlive() error {
-	ticker := time.NewTicker(time.Duration(r.srvTTL) * time.Second)
 	//关闭就注销，存活或者超时都注册
 	for {
 		select {
@@ -113,7 +112,7 @@ func (r *Register) KeepAlive() error {
 				}
 			}
 			//超时器
-		case <-ticker.C:
+		case <-time.After(time.Duration(r.srvTTL) * time.Second):
 			if r.keepAliveCh == nil {
 				if err := r.register(); err != nil {
 					r.logger.Error("注册服务错误, error: ", err)
