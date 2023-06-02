@@ -1,9 +1,9 @@
 package main
 
 import (
-	"main/ToDoList_grpc/conf"
-	"main/ToDoList_grpc/task/inner/repository"
-	"main/ToDoList_grpc/task/login"
+	"main/conf"
+	"main/task/inner/repository"
+	"main/task/login"
 )
 
 func main() {

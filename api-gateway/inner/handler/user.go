@@ -2,10 +2,10 @@ package handler
 
 import (
 	"context"
-	"main/ToDoList_grpc/pkg/e"
-	"main/ToDoList_grpc/pkg/res"
-	"main/ToDoList_grpc/pkg/util"
-	"main/ToDoList_grpc/service"
+	"main/pkg/e"
+	"main/pkg/res"
+	"main/pkg/util"
+	"main/service"
 	"net/http"
 
 	"github.com/gin-gonic/gin"

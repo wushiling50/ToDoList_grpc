@@ -3,9 +3,9 @@ package discovery
 import (
 	"errors"
 	"fmt"
-	"main/ToDoList_grpc/api-gateway/middleware/sen"
-	"main/ToDoList_grpc/api-gateway/routes"
-	"main/ToDoList_grpc/service"
+	"main/api-gateway/middleware/sen"
+	"main/api-gateway/routes"
+	"main/service"
 	"net/http"
 	"os"
 	"os/signal"

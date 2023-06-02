@@ -2,8 +2,8 @@ package login
 
 import (
 	"fmt"
-	"main/ToDoList_grpc/service"
-	"main/ToDoList_grpc/task/inner/handler"
+	"main/service"
+	"main/task/inner/handler"
 	"net"
 
 	"github.com/sirupsen/logrus"

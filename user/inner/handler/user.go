@@ -3,10 +3,10 @@ package handler
 import (
 	"context"
 
-	"main/ToDoList_grpc/pkg/e"
-	res "main/ToDoList_grpc/pkg/res/user"
-	"main/ToDoList_grpc/service"
-	"main/ToDoList_grpc/user/inner/repository"
+	"main/pkg/e"
+	res "main/pkg/res/user"
+	"main/service"
+	"main/user/inner/repository"
 )
 
 type UserService struct {

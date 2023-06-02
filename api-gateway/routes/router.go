@@ -1,8 +1,8 @@
 package routes
 
 import (
-	"main/ToDoList_grpc/api-gateway/inner/handler"
-	"main/ToDoList_grpc/api-gateway/middleware"
+	"main/api-gateway/inner/handler"
+	"main/api-gateway/middleware"
 
 	"github.com/gin-gonic/gin"
 )

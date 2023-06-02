@@ -1,7 +1,7 @@
 package res
 
 import (
-	"main/ToDoList_grpc/pkg/e"
+	"main/pkg/e"
 )
 
 // Response 基础序列化器

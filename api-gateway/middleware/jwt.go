@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"main/ToDoList_grpc/pkg/e"
-	"main/ToDoList_grpc/pkg/util"
+	"main/pkg/e"
+	"main/pkg/util"
 	"time"
 
 	"github.com/gin-gonic/gin"

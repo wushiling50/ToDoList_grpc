@@ -2,9 +2,9 @@ package handler
 
 import (
 	"context"
-	"main/ToDoList_grpc/pkg/e"
-	"main/ToDoList_grpc/service"
-	"main/ToDoList_grpc/task/inner/repository"
+	"main/pkg/e"
+	"main/service"
+	"main/task/inner/repository"
 )
 
 type TaskService struct {

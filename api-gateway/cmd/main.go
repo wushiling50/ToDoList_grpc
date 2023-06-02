@@ -1,8 +1,8 @@
 package main
 
 import (
-	"main/ToDoList_grpc/api-gateway/discovery"
-	"main/ToDoList_grpc/conf"
+	"main/api-gateway/discovery"
+	"main/conf"
 )
 
 func main() {

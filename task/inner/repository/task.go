@@ -2,7 +2,7 @@ package repository
 
 import (
 	"errors"
-	"main/ToDoList_grpc/service"
+	"main/service"
 	"strconv"
 )
 

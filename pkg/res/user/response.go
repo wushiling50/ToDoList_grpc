@@ -1,8 +1,8 @@
 package res
 
 import (
-	"main/ToDoList_grpc/service"
-	"main/ToDoList_grpc/user/inner/repository"
+	"main/service"
+	"main/user/inner/repository"
 )
 
 func BulidUser(item repository.User) *service.UserModel {

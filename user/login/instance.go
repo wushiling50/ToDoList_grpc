@@ -2,7 +2,7 @@ package login
 
 import (
 	"fmt"
-	"main/ToDoList_grpc/pkg/util"
+	"main/pkg/util"
 )
 
 type Server struct {

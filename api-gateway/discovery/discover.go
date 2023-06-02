@@ -3,7 +3,7 @@ package discovery
 import (
 	"context"
 	"errors"
-	"main/ToDoList_grpc/pkg/util"
+	"main/pkg/util"
 	"sync"
 	"time"
 

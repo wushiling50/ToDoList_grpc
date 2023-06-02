@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"main/ToDoList_grpc/service"
+	"main/service"
 
 	"golang.org/x/crypto/bcrypt"
 	"gorm.io/gorm"
