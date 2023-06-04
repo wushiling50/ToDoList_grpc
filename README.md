@@ -45,7 +45,7 @@ ToDoList-grpc/
 # 未解决的问题
 > 1.研究一下主动限流怎么实现（sentinel的官方文档中好像没介绍）  
 > 2.康康消息队列  
-> 3.docker还没折腾完（QAQ）
-> 4.Makefile还是不太清楚
+> 3.docker还没折腾完（QAQ）  
+> 4.Makefile还是不太清楚  
 
 
